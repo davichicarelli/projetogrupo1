@@ -5,13 +5,22 @@
     <title>Login</title>
     <style>
         body {
-            background-color: #d3d3d3;
+            background-color: #f5e9d7; /* cor aproximada do fundo da logo */
             font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
+        }
+
+        /* Logo no canto superior esquerdo */
+        .logo {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            width: 150px; /* Aumentar o tamanho da logo/imagem */
+            
         }
 
         .login-container {
@@ -96,18 +105,19 @@
 </head>
 <body>
 
+    <!-- Logo no canto -->
+    <img src="ProfJuquinhaLogo.png" alt="Logo Prof Juquinha" class="logo">
+
     <div class="login-container">
         <h2>Faça login na sua conta</h2>
         <form>
             <div class="input-group">
                 <span>📧</span>
                 <input type="email" placeholder="E-mail" required>
-                <!--E-mail-->
             </div>
             <div class="input-group">
                 <span>🔑</span>
                 <input type="password" placeholder="Senha" required minlength="8" maxlength="8">
-                <!--Senha-->
             </div>
             <button type="submit">Entrar</button>
         </form>
