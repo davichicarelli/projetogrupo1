@@ -62,10 +62,10 @@
         }
 
         .forgot-password {
-            text-align: center; /* centralizado */
+            text-align: center;
             margin-top: 10px;
             margin-bottom: 15px;
-            font-size: 12px; /* menor */
+            font-size: 12px;
         }
 
         .forgot-password a {
@@ -100,17 +100,18 @@
         <h2>Faça login na sua conta</h2>
         <form>
             <div class="input-group">
-                <span>👤</span>
-                <input type="text" placeholder="Usuário" required>
+                <span>📧</span>
+                <input type="email" placeholder="E-mail" required>
+                <!--E-mail-->
             </div>
             <div class="input-group">
                 <span>🔑</span>
-                <input type="password" placeholder="Senha" required>
+                <input type="password" placeholder="Senha" required minlength="8" maxlength="8">
+                <!--Senha-->
             </div>
             <button type="submit">Entrar</button>
         </form>
 
-        <!-- "Esqueceu sua senha?" centralizado e pequeno -->
         <div class="forgot-password">
             <a href="#">Esqueceu sua senha?</a>
         </div>
