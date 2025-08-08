@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        body {
+            background-color: #d3d3d3;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .input-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .input-group span {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        .input-group input {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            background-color: #0056b3;
+        }
+
+        .forgot-password {
+            text-align: center; /* centralizado */
+            margin-top: 10px;
+            margin-bottom: 15px;
+            font-size: 12px; /* menor */
+        }
+
+        .forgot-password a {
+            color: #007BFF;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .forgot-password a:hover {
+            color: #0056b3;
+        }
+
+        .signup-link {
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .signup-link a {
+            text-decoration: underline;
+            color: #007BFF;
+            cursor: pointer;
+        }
+
+        .signup-link a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Faça login na sua conta</h2>
+        <form>
+            <div class="input-group">
+                <span>👤</span>
+                <input type="text" placeholder="Usuário" required>
+            </div>
+            <div class="input-group">
+                <span>🔑</span>
+                <input type="password" placeholder="Senha" required>
+            </div>
+            <button type="submit">Entrar</button>
+        </form>
+
+        <!-- "Esqueceu sua senha?" centralizado e pequeno -->
+        <div class="forgot-password">
+            <a href="#">Esqueceu sua senha?</a>
+        </div>
+
+        <div class="signup-link">
+            Não tem um cadastro? <a href="#">Cadastre-se</a>
+        </div>
+    </div>
+
+</body>
+</html>

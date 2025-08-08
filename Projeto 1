@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Professor Juquinha - Aulas Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Professor Juquinha</h1>
+        <p>Aulas particulares de Matemática, Lógica de Programação, Português e Espanhol</p>
+        <nav>
+            <button onclick="showSection('home')">Home</button>
+            <button onclick="showSection('agendar')">Agendar Aula</button>
+            <button onclick="showSection('cadastro')">Cadastrar Aluno</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Página Home -->
+        <section id="home" class="visible">
+            <h2>Bem-vindo ao sistema de aulas online!</h2>
+            <p>Escolha uma opção acima para agendar ou se cadastrar.</p>
+        </section>
+
+        <!-- Página Agendamento -->
+        <section id="agendar" class="hidden">
+            <h2>Agendar Aula</h2>
+            <form id="formAgendamento">
+                <label for="nomeAluno">Nome do Aluno:</label>
+                <input type="text" id="nomeAluno" required>
+
+                <label for="disciplina">Disciplina:</label>
+                <select id="disciplina" required>
+                    <option value="Matemática">Matemática - R$ 50</option>
+                    <option value="Lógica de Programação">Lógica de Programação - R$ 60</option>
+                    <option value="Português">Português - R$ 45</option>
+                    <option value="Espanhol">Espanhol - R$ 55</option>
+                </select>
+
+                <label for="data">Data:</label>
+                <input type="date" id="data" required>
+
+                <label for="hora">Hora:</label>
+                <select id="hora" required>
+                    <!-- Horários válidos entre 08h e 12h e 14h e 18h -->
+                </select>
+
+                <button type="submit">Agendar</button>
+            </form>
+            <div id="agendamentoResultado"></div>
+        </section>
+
+        <!-- Página de Cadastro -->
+        <section id="cadastro" class="hidden">
+            <h2>Cadastrar Novo Aluno</h2>
+            <form id="formCadastro">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" required>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+            <div id="cadastroResultado"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
